@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Cara Shalat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #333;
+            letter-spacing: 0.5px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .section-title span {
+            font-weight: 400;
+            font-size: 15px;
+            color: #555;
+        }
+
+        .gerakan {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 14px;
+        }
+
+        .gerakan strong {
+            color: #222;
+        }
+
+        .bacaan-box {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-left: 3px solid #555;
+            padding: 16px 20px;
+            margin: 12px 0;
+        }
+
+        .arab {
+            font-family: 'Traditional Arabic', 'Amiri', 'Scheherazade New', serif;
+            font-size: 26px;
+            text-align: right;
+            direction: rtl;
+            line-height: 2;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .latin {
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .play-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            padding: 5px 12px;
+            cursor: pointer;
+            font-size: 13px;
+            color: #555;
+            transition: all 0.2s ease;
+        }
+
+        .play-btn:hover {
+            background: #f0f0f0;
+            border-color: #888;
+            color: #222;
+        }
+
+        .play-btn:active {
+            background: #e8e8e8;
+        }
+
+        .play-btn .icon {
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .play-btn.playing {
+            border-color: #555;
+            color: #222;
+        }
+
+        .catatan {
+            font-size: 14px;
+            color: #666;
+            margin-top: 6px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 20px;
+            }
+
+            .arab {
+                font-size: 22px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tata Cara Shalat</h1>
+
+        <!-- 1. Ruku -->
+        <div class="section">
+            <div class="section-title">1. Ruku</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Mengangkat kedua tangan seperti takbir. Rukuk dengan sempurna, rata antara kepala dan punggung.</div>
+            <div class="bacaan-box">
+                <div class="arab">سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي</div>
+                <div class="latin">Subhaanakallahumma rabbanaa wa bihamdika, Allahummaghfirli</div>
+                <button class="play-btn" onclick="putarAudio(this, 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+
+        <!-- 2. Iktidal -->
+        <div class="section">
+            <div class="section-title">2. Iktidal</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Mengangkat kedua tangan seperti takbiratulihram.</div>
+            <div class="bacaan-box">
+                <div class="arab">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</div>
+                <div class="latin">Sami'allahuliman hamidah</div>
+                <button class="play-btn" onclick="putarAudio(this, 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+            <div class="bacaan-box">
+                <div class="arab">رَبَّنَا وَلَكَ الْحَمْدُ</div>
+                <div class="latin">Rabbanaa walakalhamd</div>
+                <button class="play-btn" onclick="putarAudio(this, 'رَبَّنَا وَلَكَ الْحَمْدُ')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+
+        <!-- 3. Sujud -->
+        <div class="section">
+            <div class="section-title">3. Sujud</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Meletakkan kening dan hidung, kedua tangan, kedua lutut, dan kedua kaki ke lantai. Membaca doa seperti doa rukuk.</div>
+            <div class="bacaan-box">
+                <div class="arab">سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي</div>
+                <div class="latin">Subhaanakallahumma rabbanaa wa bihamdika, Allahummaghfirli</div>
+                <button class="play-btn" onclick="putarAudio(this, 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+
+        <!-- 4. Duduk di Antara Dua Sujud -->
+        <div class="section">
+            <div class="section-title">4. Duduk di Antara Dua Sujud</div>
+            <div class="bacaan-box">
+                <div class="arab">اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَاهْدِنِي وَارْزُقْنِي</div>
+                <div class="latin">Allahummaghfirli warhamni wajburni wahdini warzuqni</div>
+                <button class="play-btn" onclick="putarAudio(this, 'اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَاهْدِنِي وَارْزُقْنِي')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+
+        <!-- 5. Duduk Tasyahud Awal -->
+        <div class="section">
+            <div class="section-title">5. Duduk Tasyahud Awal</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Duduk di atas telapak kaki kiri dan menegakan telapak kaki kanan (duduk iftirasy), dengan pandangan ke arah jari telunjuk.</div>
+            <div class="bacaan-box">
+                <div class="arab">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
+                <div class="latin">Attahiyyaatulillah washalawaatu wathayyibaat. Assalaamu 'alaika ayyuhan nabiyyu warahmatullahi wabarakaatuh. Assalaamu 'alainaa wa 'ala 'ibadillahishshaalihiin. Asyhadu alla ilaha illallah wa asyhadu anna muhammadan 'abduhu warasuuluh.</div>
+                <button class="play-btn" onclick="putarAudio(this, 'التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+
+        <!-- 6. Duduk Tasyahud Akhir -->
+        <div class="section">
+            <div class="section-title">6. Duduk Tasyahud Akhir</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Memajukan kaki kiri di bawah kaki kanan dan menegakan telapak kaki kanan (duduk tawarruk), dengan pandangan ke arah jari telunjuk. Membaca doa tasyahud awal ditambah doa Ibrahimiyah.</div>
+            <div class="catatan">Doa tasyahud awal (sama seperti di atas), dilanjutkan dengan:</div>
+            <div class="bacaan-box">
+                <div class="arab">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
+                <div class="latin">Allahumma shalli 'ala muhammad wa 'ala ali muhammad kamaa shalaita 'ala ibraahiim wa ali ibraahiim. Wa baarik 'ala muhammad wa ali muhammad kamaa barakta 'ala ibraahiim wa ali ibraahiim innaka hamiidummajid.</div>
+                <button class="play-btn" onclick="putarAudio(this, 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+
+        <!-- 7. Doa Perlindungan -->
+        <div class="section">
+            <div class="section-title">7. Doa Perlindungan (Sebelum Salam)</div>
+            <div class="bacaan-box">
+                <div class="arab">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ</div>
+                <div class="latin">Allahumma inni a'udzubika min 'adzaabi jahannam, wa min 'adzaabilqabri, wa min fitnatilmahyaa wal mamaati, wa min syarri fitnatil masiihiddajjaal.</div>
+                <button class="play-btn" onclick="putarAudio(this, 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+
+        <!-- 8. Salam -->
+        <div class="section">
+            <div class="section-title">8. Salam</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Salam ke kanan dan ke kiri.</div>
+            <div class="bacaan-box">
+                <div class="arab">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</div>
+                <div class="latin">Assalaamu'alaikum wa rahmatullahi wa barakaatuh</div>
+                <button class="play-btn" onclick="putarAudio(this, 'السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ')">
+                    <span class="icon">▶</span> Putar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentUtterance = null;
+        let currentBtn = null;
+
+        function putarAudio(btn, teks) {
+            // Hentikan audio yang sedang berjalan
+            if (currentUtterance && speechSynthesis.speaking) {
+                speechSynthesis.cancel();
+                if (currentBtn) {
+                    currentBtn.classList.remove('playing');
+                    currentBtn.innerHTML = '<span class="icon">▶</span> Putar';
+                }
+                // Jika tombol yang sama diklik, cukup berhenti
+                if (currentBtn === btn) {
+                    currentBtn = null;
+                    currentUtterance = null;
+                    return;
+                }
+            }
+
+            const utterance = new SpeechSynthesisUtterance(teks);
+            utterance.lang = 'ar-SA';
+            utterance.rate = 0.85;
+            utterance.pitch = 1;
+
+            btn.classList.add('playing');
+            btn.innerHTML = '<span class="icon">⏸</span> Berhenti';
+            currentBtn = btn;
+            currentUtterance = utterance;
+
+            utterance.onend = function () {
+                btn.classList.remove('playing');
+                btn.innerHTML = '<span class="icon">▶</span> Putar';
+                currentBtn = null;
+                currentUtterance = null;
+            };
+
+            utterance.onerror = function () {
+                btn.classList.remove('playing');
+                btn.innerHTML = '<span class="icon">▶</span> Putar';
+                currentBtn = null;
+                currentUtterance = null;
+            };
+
+            speechSynthesis.speak(utterance);
+        }
+
+        // Hentikan saat halaman ditutup/ditinggal
+        window.addEventListener('beforeunload', function () {
+            speechSynthesis.cancel();
+        });
+    </script>
+</body>
+</html>
