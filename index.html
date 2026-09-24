@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tata Cara Shalat dari rukuk sampai salam</title>
+    <title>Tata Cara Shalat</title>
     <style>
         * {
             margin: 0;
@@ -12,140 +12,140 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.7;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+            line-height: 1.6;
+            padding: 24px;
         }
 
         .container {
-            max-width: 780px;
+            max-width: 760px;
             margin: 0 auto;
-            background: #fff;
-            padding: 40px 50px;
-            border: 1px solid #ddd;
+            background: #ffffff;
+            padding: 40px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
         }
 
         h1 {
             text-align: center;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
-            margin-bottom: 30px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid #333;
+            margin-bottom: 32px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #1f2937;
             letter-spacing: 0.5px;
+            color: #111827;
         }
 
         .section {
-            margin-bottom: 32px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #e8e8e8;
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #f3f4f6;
         }
 
         .section:last-child {
             border-bottom: none;
             margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .section-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #222;
-        }
-
-        .section-title span {
-            font-weight: 400;
-            font-size: 15px;
-            color: #555;
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #111827;
         }
 
         .gerakan {
-            font-size: 15px;
-            color: #444;
-            margin-bottom: 14px;
+            font-size: 14px;
+            color: #4b5563;
+            margin-bottom: 12px;
         }
 
         .gerakan strong {
-            color: #222;
+            color: #374151;
         }
 
         .bacaan-box {
-            background: #fafafa;
-            border: 1px solid #e0e0e0;
-            border-left: 3px solid #555;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-left: 3px solid #4b5563;
             padding: 16px 20px;
             margin: 12px 0;
+            border-radius: 0 6px 6px 0;
         }
 
         .arab {
-            font-family: 'Traditional Arabic', 'Amiri', 'Scheherazade New', serif;
+            font-family: "Traditional Arabic", "Amiri", "Scheherazade New", serif;
             font-size: 26px;
             text-align: right;
             direction: rtl;
             line-height: 2;
-            color: #1a1a1a;
+            color: #111827;
             margin-bottom: 8px;
         }
 
         .latin {
             font-size: 14px;
             font-style: italic;
-            color: #555;
-            margin-bottom: 10px;
-            line-height: 1.6;
+            color: #4b5563;
+            margin-bottom: 12px;
+            line-height: 1.5;
         }
 
         .play-btn {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            background: none;
-            border: 1px solid #bbb;
+            background: #ffffff;
+            border: 1px solid #d1d5db;
             border-radius: 4px;
-            padding: 5px 12px;
+            padding: 6px 12px;
             cursor: pointer;
             font-size: 13px;
-            color: #555;
-            transition: all 0.2s ease;
+            font-weight: 500;
+            color: #374151;
+            transition: all 0.15s ease;
         }
 
         .play-btn:hover {
-            background: #f0f0f0;
-            border-color: #888;
-            color: #222;
+            background: #f3f4f6;
+            border-color: #9ca3af;
         }
 
         .play-btn:active {
-            background: #e8e8e8;
-        }
-
-        .play-btn .icon {
-            font-size: 14px;
-            line-height: 1;
+            background: #e5e7eb;
         }
 
         .play-btn.playing {
-            border-color: #555;
-            color: #222;
+            background: #1f2937;
+            border-color: #1f2937;
+            color: #ffffff;
+        }
+
+        .play-btn svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+            flex-shrink: 0;
         }
 
         .catatan {
-            font-size: 14px;
-            color: #666;
-            margin-top: 6px;
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 8px;
+            font-style: italic;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 640px) {
             .container {
                 padding: 24px 20px;
             }
-
             .arab {
                 font-size: 22px;
             }
-
             h1 {
                 font-size: 20px;
             }
@@ -153,6 +153,7 @@
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>Tata Cara Shalat</h1>
 
@@ -163,42 +164,48 @@
             <div class="bacaan-box">
                 <div class="arab">سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي</div>
                 <div class="latin">Subhaanakallahumma rabbanaa wa bihamdika, Allahummaghfirli</div>
-                <button class="play-btn" onclick="putarAudio(this, 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-ruku')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-ruku" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/rukuk%20dan%20sujud.mp3" preload="none"></audio>
             </div>
         </div>
 
         <!-- 2. Iktidal -->
         <div class="section">
             <div class="section-title">2. Iktidal</div>
-            <div class="gerakan"><strong>Gerakan:</strong> Mengangkat kedua tangan seperti takbiratulihram.</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Bangun dari ruku dengan mengangkat kedua tangan seperti takbiratulihram.</div>
+            
             <div class="bacaan-box">
                 <div class="arab">سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ</div>
                 <div class="latin">Sami'allahuliman hamidah</div>
-                <button class="play-btn" onclick="putarAudio(this, 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-samiallah')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-samiallah" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/samiallah.mp3" preload="none"></audio>
             </div>
+
             <div class="bacaan-box">
                 <div class="arab">رَبَّنَا وَلَكَ الْحَمْدُ</div>
                 <div class="latin">Rabbanaa walakalhamd</div>
-                <button class="play-btn" onclick="putarAudio(this, 'رَبَّنَا وَلَكَ الْحَمْدُ')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-robbana')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-robbana" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/robbana.mp3" preload="none"></audio>
             </div>
         </div>
 
         <!-- 3. Sujud -->
         <div class="section">
             <div class="section-title">3. Sujud</div>
-            <div class="gerakan"><strong>Gerakan:</strong> Meletakkan kening dan hidung, kedua tangan, kedua lutut, dan kedua kaki ke lantai. Membaca doa seperti doa rukuk.</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Meletakkan kening, hidung, kedua telapak tangan, kedua lutut, dan ujung jari kaki ke lantai.</div>
             <div class="bacaan-box">
                 <div class="arab">سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي</div>
                 <div class="latin">Subhaanakallahumma rabbanaa wa bihamdika, Allahummaghfirli</div>
-                <button class="play-btn" onclick="putarAudio(this, 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-sujud')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-sujud" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/rukuk%20dan%20sujud.mp3" preload="none"></audio>
             </div>
         </div>
 
@@ -208,36 +215,39 @@
             <div class="bacaan-box">
                 <div class="arab">اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَاهْدِنِي وَارْزُقْنِي</div>
                 <div class="latin">Allahummaghfirli warhamni wajburni wahdini warzuqni</div>
-                <button class="play-btn" onclick="putarAudio(this, 'اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاجْبُرْنِي وَاهْدِنِي وَارْزُقْنِي')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-duduk-sujud')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-duduk-sujud" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/duduk%20diantara%20dua%20sujud.mp3" preload="none"></audio>
             </div>
         </div>
 
         <!-- 5. Duduk Tasyahud Awal -->
         <div class="section">
             <div class="section-title">5. Duduk Tasyahud Awal</div>
-            <div class="gerakan"><strong>Gerakan:</strong> Duduk di atas telapak kaki kiri dan menegakan telapak kaki kanan (duduk iftirasy), dengan pandangan ke arah jari telunjuk.</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Duduk iftirasy (di atas telapak kaki kiri, menegakan telapak kaki kanan), pandangan ke arah jari telunjuk.</div>
             <div class="bacaan-box">
                 <div class="arab">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
                 <div class="latin">Attahiyyaatulillah washalawaatu wathayyibaat. Assalaamu 'alaika ayyuhan nabiyyu warahmatullahi wabarakaatuh. Assalaamu 'alainaa wa 'ala 'ibadillahishshaalihiin. Asyhadu alla ilaha illallah wa asyhadu anna muhammadan 'abduhu warasuuluh.</div>
-                <button class="play-btn" onclick="putarAudio(this, 'التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-tasyahud-awal')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-tasyahud-awal" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/tasyahud%20awal.mp3" preload="none"></audio>
             </div>
         </div>
 
         <!-- 6. Duduk Tasyahud Akhir -->
         <div class="section">
             <div class="section-title">6. Duduk Tasyahud Akhir</div>
-            <div class="gerakan"><strong>Gerakan:</strong> Memajukan kaki kiri di bawah kaki kanan dan menegakan telapak kaki kanan (duduk tawarruk), dengan pandangan ke arah jari telunjuk. Membaca doa tasyahud awal ditambah doa Ibrahimiyah.</div>
-            <div class="catatan">Doa tasyahud awal (sama seperti di atas), dilanjutkan dengan:</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Duduk tawarruk (kaki kiri di bawah kaki kanan, telapak kaki kanan ditegakkan), pandangan ke arah jari telunjuk.</div>
+            <div class="catatan">Membaca doa tasyahud awal, dilanjutkan dengan doa Ibrahimiyah:</div>
             <div class="bacaan-box">
                 <div class="arab">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
                 <div class="latin">Allahumma shalli 'ala muhammad wa 'ala ali muhammad kamaa shalaita 'ala ibraahiim wa ali ibraahiim. Wa baarik 'ala muhammad wa ali muhammad kamaa barakta 'ala ibraahiim wa ali ibraahiim innaka hamiidummajid.</div>
-                <button class="play-btn" onclick="putarAudio(this, 'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-tasyahud-akhir')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-tasyahud-akhir" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/tasyahud%20akhir.mp3" preload="none"></audio>
             </div>
         </div>
 
@@ -247,76 +257,83 @@
             <div class="bacaan-box">
                 <div class="arab">اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ</div>
                 <div class="latin">Allahumma inni a'udzubika min 'adzaabi jahannam, wa min 'adzaabilqabri, wa min fitnatilmahyaa wal mamaati, wa min syarri fitnatil masiihiddajjaal.</div>
-                <button class="play-btn" onclick="putarAudio(this, 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-perlindungan')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-perlindungan" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/doa%20perlindungan.mp3" preload="none"></audio>
             </div>
         </div>
 
         <!-- 8. Salam -->
         <div class="section">
             <div class="section-title">8. Salam</div>
-            <div class="gerakan"><strong>Gerakan:</strong> Salam ke kanan dan ke kiri.</div>
+            <div class="gerakan"><strong>Gerakan:</strong> Menoleh ke kanan hingga pipi kanan terlihat dari belakang, lalu menoleh ke kiri hingga pipi kiri terlihat dari belakang.</div>
             <div class="bacaan-box">
                 <div class="arab">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</div>
                 <div class="latin">Assalaamu'alaikum wa rahmatullahi wa barakaatuh</div>
-                <button class="play-btn" onclick="putarAudio(this, 'السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ')">
-                    <span class="icon">▶</span> Putar
+                <button class="play-btn" onclick="toggleAudio(this, 'audio-salam')">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar
                 </button>
+                <audio id="audio-salam" src="https://cdn.jsdelivr.net/gh/faudyadam77-tech/Suara-solat@main/salam.mp3" preload="none"></audio>
             </div>
         </div>
+
     </div>
 
     <script>
-        let currentUtterance = null;
+        let currentAudio = null;
         let currentBtn = null;
 
-        function putarAudio(btn, teks) {
-            // Hentikan audio yang sedang berjalan
-            if (currentUtterance && speechSynthesis.speaking) {
-                speechSynthesis.cancel();
+        function toggleAudio(btn, audioId) {
+            const audio = document.getElementById(audioId);
+
+            // Jika tombol yang sama diklik saat sedang diputar, hentikan
+            if (currentAudio === audio && !audio.paused) {
+                audio.pause();
+                audio.currentTime = 0;
+                btn.classList.remove('playing');
+                btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar';
+                currentAudio = null;
+                currentBtn = null;
+                return;
+            }
+
+            // Hentikan audio lain yang mungkin sedang berjalan
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
                 if (currentBtn) {
                     currentBtn.classList.remove('playing');
-                    currentBtn.innerHTML = '<span class="icon">▶</span> Putar';
-                }
-                // Jika tombol yang sama diklik, cukup berhenti
-                if (currentBtn === btn) {
-                    currentBtn = null;
-                    currentUtterance = null;
-                    return;
+                    currentBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar';
                 }
             }
 
-            const utterance = new SpeechSynthesisUtterance(teks);
-            utterance.lang = 'ar-SA';
-            utterance.rate = 0.85;
-            utterance.pitch = 1;
-
-            btn.classList.add('playing');
-            btn.innerHTML = '<span class="icon">⏸</span> Berhenti';
+            // Putar audio baru
+            audio.play().catch(error => {
+                console.error("Gagal memutar audio:", error);
+                alert("Gagal memutar audio. Pastikan koneksi internet stabil.");
+            });
+            
+            currentAudio = audio;
             currentBtn = btn;
-            currentUtterance = utterance;
+            
+            btn.classList.add('playing');
+            btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg> Berhenti';
 
-            utterance.onend = function () {
+            // Kembalikan tombol ke keadaan semula saat audio selesai diputar
+            audio.onended = function() {
                 btn.classList.remove('playing');
-                btn.innerHTML = '<span class="icon">▶</span> Putar';
+                btn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Putar';
+                currentAudio = null;
                 currentBtn = null;
-                currentUtterance = null;
             };
-
-            utterance.onerror = function () {
-                btn.classList.remove('playing');
-                btn.innerHTML = '<span class="icon">▶</span> Putar';
-                currentBtn = null;
-                currentUtterance = null;
-            };
-
-            speechSynthesis.speak(utterance);
         }
 
-        // Hentikan saat halaman ditutup/ditinggal
-        window.addEventListener('beforeunload', function () {
-            speechSynthesis.cancel();
+        // Hentikan audio jika pengguna menutup/meninggalkan halaman
+        window.addEventListener('beforeunload', function() {
+            if (currentAudio) {
+                currentAudio.pause();
+            }
         });
     </script>
 </body>
